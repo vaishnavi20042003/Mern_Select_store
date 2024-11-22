@@ -1,0 +1,219 @@
+/* styles.css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+/* General body styles */
+body {
+  font-family: 'Lora', serif; /* Elegant and readable font for body */
+  margin: 0;
+  padding: 0;
+  background-color: #f8f5f2; /* Soft pastel off-white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #4a4a4a; /* Subtle dark gray for text */
+  text-align: center;
+}
+
+/* Premium Heading (Select-Store) */
+h1 {
+  color: #5c4d3a; /* Rich dark coffee color for contrast */
+  font-size: 3.5rem; /* Larger size for prominence */
+  font-weight: 700; /* Bold weight for emphasis */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif; /* Premium serif font for luxury */
+  letter-spacing: 1px; /* Slight spacing for elegance */
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 70%; /* Adjust to length of heading */
+  height: 3px;
+  background-color: #d3a588; /* Elegant soft pastel brown accent */
+  margin: 10px auto 20px;
+  border-radius: 2px;
+}
+
+/* Subheading (Premium skincare product store) */
+h2 {
+  color: #4a4a4a; /* Neutral gray for subheading */
+  font-weight: 600;
+  font-size: 2rem; /* Slightly smaller but still prominent */
+  margin-bottom: 20px;
+  font-family: 'Lora', serif; /* Elegant serif font */
+  position: relative;
+  letter-spacing: 0.5px; /* Subtle spacing to balance */
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60%; /* Adjust to length of subheading */
+  height: 2px;
+  background-color: #bfa68a; /* Light pastel brown for contrast */
+  margin: 5px auto;
+  border-radius: 2px;
+}
+
+/* Heading and Subheading Box */
+.heading-box {
+  background-color: #c38f70; /* Contrasting pastel coral background */
+  padding: 40px 20px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Button */
+button {
+  background-color: #8a7253; /* Solid muted coffee brown */
+  color: #ffffff; /* White text for contrast */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #6d5a43; /* Slightly darker brown on hover */
+  transform: scale(1.05);
+}
+
+form {
+  background-color: #ffffff; /* Clean white for forms */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Input Fields */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #d4d4d4; /* Subtle border */
+  border-radius: 5px;
+  font-size: 14px;
+  color: #495057;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #c38f70; /* Muted pastel coral on focus */
+  box-shadow: 0 0 5px rgba(195, 143, 112, 0.5);
+  outline: none;
+}
+
+/* Product Details Section */
+.product-details {
+  background-color: #f9f4ee; /* Soft pastel beige */
+  border: 1px solid #d3a588; /* Pastel brown for subtle contrast */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h2 {
+  color: #5c4d3a; /* Rich dark coffee color */
+}
+
+.product-details p {
+  color: #495057; /* Neutral gray for text */
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.product-details strong {
+  color: #c38f70; /* Highlight text in pastel coral */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+footer a {
+  color: #5c4d3a; /* Coffee color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
